@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Just Eat</title>
+
+		 </head>
+  <body>
+
+		
+	<!-- Start of first page: #home -->
+    <div data-role="page" id="one">
+    <div data-role="header" id="header">
+	<h2>Just Eat  Food App </h2>
+	</div>
+				<!-- /header -->
+	    <div data-role="navbar" >
+				<h2>JUST EAT</h2>
+				<img src="/images/eat.jpg" alt="Just Eat" width="1500" height="100">
+				<ul>
+						
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#login">Login</a></li>
+		<li><a href="#registeration">Register</a></li>
+				</ul>
+ </div>
+ <!-- /navbar -->
+	
+ <div role="main" class="ui-content">
+</div><!-- /content -->
+<div data-role="footer" data-theme="a">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page home -->
+
+<!-- Start of login page: #login -->
+
+<div data-role="page" id="login">
+	 
+	<div data-role="header">
+			<h1>Login</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+			<img src="/images/eat.jpg" alt="Just Eat" width="1500" height="100">
+		<h2>Login</h2>
+		
+		Username: <input type="text" id="usernameLogin" name="username"></input>
+		Password: <input type="text" id="passwordLogin" name="password"></input>
+	  
+   <button id="loginstart" class="ui-btn">Login</button>
+
+   <p><a href = "#one">Back to previous page</a></p>
+    </div>
+
+</div><!-- /content -->
+
+<!-- /Login Page -->
+<!-- Start of Rejester  page: #three-->
+<div data-role="page" id="registeration">
+	    
+	<div data-role="header">
+			<h1>Rejester</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+			<img src="/images/eat.jpg" alt="Just Eat" width="1500" height="100">
+		<h2>Register</h2>
+
+		Username: <input type="text" id="username" name="username"></input>
+		Password: <input type="text" id="password" name ="password"></input>
+		Email: <input type="text" id="email" name="email"></input>
+	   Acctype: <input type="text" id="acctype" name="acctype"></input>
+	   Address: <input type="text" id="address" name="address"></input>
+   <button id="startregister" class="ui-btn">Sign Up</button>
+   <p><a href = "#one">Back to previous page</a></p>
+   </div>
+   </div>
+	<!-- /content -->
+
+
+
+<!-- /Start of Register  page: --> 
+
+   <!-- Start of Manager  page: -->
+   <div data-role="page" id="manager" data-theme="a">
+
+			<div data-role="header">
+	
+			<h1>Manager</h1>
+	
+			</div><!-- /header -->
+		<div role="main" class="ui-content">
+	
+			<h2>Manager</h2>
+	
+			<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>
+	
+			<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
+	
+			<p><a href="#one" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to page "one"</a></p>
+	</div><!-- /content -->
+	<div data-role="footer">
+	<h4>Page Footer</h4>
+	</div><!-- /footer -->
+    </div><!-- /page manager -->
+   <!-- /Start of Manager  page: -->
+     <!-- Start of Cook page: -->
+	 <div data-role="page" id="cook" data-theme="a">
+
+			<div data-role="header">
+	
+			<h1>Cook Update</h1>
+	
+			</div><!-- /header -->
+		<div role="main" class="ui-content">
+	
+			<h2>Cook Quantity</h2>
+
+	
+			
+			<p><a href="#one" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to Home </a></p>
+	</div><!-- /content -->
+	<div data-role="footer">
+	<h4>Page Footer</h4>
+	</div><!-- /footer -->
+    </div><!-- /page manager -->
+   <!-- /Start of cook page: -->
+    <!-- Start of Customer  page: -->
+	<div data-role="page" id="customer" data-theme="a">
+<!-- panel content goes here -->
+<div data-role="panel" id="mypanel">
+		Your Cart Summary 
+		  <div id="myitems">
+			</div>
+				<button id="placeorder" class="ui-btn">Place Order</button>
+		
+		</div><!-- /panel -->
+  
+			<div data-role="header">
+	
+			<h1>Customer</h1>
+	
+			</div><!-- /header -->
+		<div role="main" class="ui-content">
+	
+			<h2>Customer</h2>
+			<p> Please Choise your Pizza  here</p>
+	
+		
+			<!-- Start of Cart: -->
+			<a href="#mypanel" data-position="right" data-position-fixed="true" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-bars">Checkout</a>
+	
+<div class="ui-field-contain" >
+	<table style="width:100%" align-text: center >
+       <tr>
+		   <th>Product</th>
+		   <th>Quantity</th>
+		   <th>Price</th>
+		   <th>Total Price</th>
+		   <th> Add to Basket</th>
+		   
+	   </tr>
+	  <tr>
+		  <td><label for  = "select-native-2" id= "productname"> BBQ Pizza</label></td>
+		<td><select id ="bbq_pizza_qty" name = "select-native-2" id="select-native-2" data-mini ="true">
+				<option value=""></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select></td>
+			<td id="pq_bbq"> 10.99 </td>
+			<td id="tp_bbq"></td>
+		<td><button id="addtocart" onclick="addToCart('bbq_pizza_qty')"> Add To Cart </button></td>
+	  </tr>
+
+
+	  <tr>
+	  <td><label for="select-native-2" id= "productname"> SUFI Pizza</label></td>
+	 
+		<td><select id ="sufi_pizza_qty" name = "select-native-2" data-mini ="true">
+				<option value=""></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			
+			</select></td>
+			<td id="pq_sufi_pizza"> 12.99 </td>
+			<td id="tp_sufi_pizza"></td>
+		<td><button id="addtocart" onclick="addToCart('sufi_pizza_qty')"> Add To Cart </button></td>
+	  </tr>
+
+
+      <tr>
+	  <td><label for  = "select-native-2" id= "productname"> Margherita Pizza</label></td>
+	  <td><select id ="marg_pizza_qty" name = "select-native-2" id="select-native-2" data-mini ="true">
+				<option value=""></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select></td>
+			<td id="pq_marg_pizza"> 16.99 </td>
+			<td id="tp_marg_pizza"></td>
+		<td><button id="addtocart" onclick="addToCart('marg_pizza_qty')"> Add To Cart </button></td>
+	  </tr>
+	  <tr>
+	  <td><label for  = "select-native-2" id= "productname"> Pizza al Pesto Pizza</label></td>
+	  <td><select id ="palp_pizza_qty" name = "select-native-2" id="select-native-2" data-mini ="true">
+			  <option value=""></option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			 
+		  </select></td>
+		  <td id="pq_palp_pizza"> 18.99 </td>
+			<td id="tp_palp_pizza"></td>
+	  <td><button id="addtocart" onclick="addToCart('palp_pizza_qty')"> Add To Cart </button></td>
+	</tr>
+	<tr>
+	<td><label for  = "select-native-2" id= "productname"> Ortolana Pizza</label></td>
+	<td><select id ="oroto_pizza_qty" name = "select-native-2" id="select-native-2" data-mini ="true">
+			  <option value=""></option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+		  </select></td>
+		  <td id="pq_oroto_pizza"> 20.99 </td>
+			<td id="tp_oroto_pizza"></td>
+	  <td><button id="addtocart" onclick="addToCart('orto_pizza_qty')"> Add To Cart </button></td>
+	</tr> -->
+</div>
+</table>
+   
+</div>
+<p><a href = "#one">Back to previous page</a></p>
+	<div data-role="footer">
+	<h4>Page Footer</h4>
+	</div><!-- /footer -->
+    </div><!-- /page customer -->
+   <!-- /Start of Customer page: -->
+<script>
+		$("#loginstart").click(function(e) {
+	  
+		  console.log("clicked");
+		  var un = $("#usernameLogin").val();
+	      var pw = $("#passwordLogin").val();
+		  console.log(un);
+		  console.log(pw);
+			$.post( "/login", { usernameLogin: un, passwordLogin:pw })
+	  
+			.done(function( data ) {
+	  
+				 alert( "Data Loaded: " + data );
+	   
+			 // redirection to the customer page.
+			 if(data == 'Customer')
+			 {
+	         $.mobile.changePage( "#customer",{
+				transition: "pop",
+	  
+					reverse: false,
+	  
+					changeHash: false
+	  
+			  });
+			}
+
+			 // redirection to the manager page.
+			 if(data == 'Manager')
+			 {
+	         $.mobile.changePage( "#manager",{
+				transition: "pop",
+	  
+					reverse: false,
+	  
+					changeHash: false
+	  
+			  });
+			}
+			 // redirection to the manager page.
+			 if(data == 'Cook')
+			 {
+	         $.mobile.changePage( "#cook",{
+				transition: "pop",
+	  
+					reverse: false,
+	  
+					changeHash: false
+	  
+			  });
+			}
+		 });
+	  
+		});
+	 
+  
+  
+  $("#startregister").click(function(e) {
+	
+
+      var ur = $("#username").val();
+	  var pr = $("#password").val();
+	  var em = $("#email").val();
+	  var at = $("#acctype").val();
+	  var aa = $("#address").val();
+
+	  console.log("Username = " + ur);
+	  console.log("Password =" +pr);
+	  console.log("Email = " + em);
+	  console.log("Account type = " +at);
+	  console.log("Address = " +aa);
+
+	 
+      $.post("/registeration", { username : ur, password : pr, email : em, acctype : at, address:aa })
+	   .done(function( data ) {
+		   
+			    $.mobile.changePage("#login",{
+				transition: "pop",
+	            reverse: false,
+	         	changeHash: false
+	  
+			  });
+		 });
+		});
+//place order unction
+$("#placeorder")
+    .change(function(){
+
+	});
+var myCart = [];
+// start of quanty function
+$( "#bbq_pizza_qty")
+   .change(function () {
+	   var qty = $( "#bbq_pizza_qty").children("option:selected").val();
+	   var tp = 10.99 * qty;
+	   $('#tp_bbq').html(tp);
+   });
+   $( "#sufi_pizza_qty")
+   .change(function () {
+	   var qty = $( "#sufi_pizza_qty").children("option:selected").val();
+	   var tp = 12.99 * qty;
+	   $('#tp_sufi_pizza').html(tp);
+   });
+
+   $( "#marg_pizza_qty")
+   .change(function () {
+	   var qty = $( "#marg_pizza_qty").children("option:selected").val();
+	   var tp = 16.99 * qty;
+	   $('#tp_marg_pizza').html(tp);
+   });
+   $( "#palp_pizza_qty")
+   .change(function () {
+	   var qty = $( "#palp_pizza_qty").children("option:selected").val();
+	   var tp = 18.99 * qty;
+	   $('#tp_palp_pizza').html(tp);
+   });
+   $( "#oroto_pizza_qty")
+   .change(function () {
+	   var qty = $( "#oroto_pizza_qty").children("option:selected").val();
+	   var tp = 20.99 * qty;
+	   $('#tp_oroto_pizza').html(tp);
+   });
+
+
+// end of function 
+function addToCart(itemName){
+    // finding out the name of the ITEM we are adding
+    var item = itemName;
+	console.log(item);
+    
+    // dynamically find out the qty
+	var qty = $('#'+item).children("option:selected").val();
+	console.log(qty);
+    
+    // search the cart and see if we already added
+    // the item. If we did, remove the old qty.
+
+    myCart.forEach(function(itemCurrent, index, array) {
+           
+           
+           
+           if(itemCurrent.includes(item)){
+              console.log("Removing previous reference to " + item);
+              myCart.pop(index);
+           }
+    });
+    
+    
+    // add the item to the cart
+    myCart.push(item + '-' + qty);
+    $('#myitems').html(myCart) 
+    alert(myCart);
+
+}
+
+
+
+
+
+</script>
+
+  </body>
+</html>
